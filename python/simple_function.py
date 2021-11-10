@@ -11,7 +11,7 @@ def HitungLuasPersegi():
     Panjang = 10
     Lebar = 4
     Luas = Panjang * Lebar
-    print('Luas Persegi Panjang  = %2.2f2'%Luas)
+    print('Luas Persegi Panjang  = %2.2f'%Luas)
 
 def HitungLuasLingkaran():
     print('\nMenghitung Luas Lingkaran Dari Function')
