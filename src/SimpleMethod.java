@@ -23,13 +23,19 @@ public class SimpleMethod {
     }
 
     private static void HitungLuasLingkaran(){
-        Scanner inputUser = new Scanner(System.in);
+        Scanner inputUser;
+        inputUser = new Scanner(System.in);
         double jarijari;
         double LuasLingkaran;
-        System.out.println("\nMasukkan Jari-Jari = ");
-        jarijari = inputUser.nextDouble();
-        LuasLingkaran = Math.PI * jarijari * jarijari;
-        System.out.println("Luas Lingkaran = " + LuasLingkaran);
+        
+        try{
+            System.out.println("\nMasukkan Jari-Jari = ");
+            jarijari = inputUser.nextDouble();
+            LuasLingkaran = Math.PI * jarijari * jarijari;
+            System.out.println("Luas Lingkaran = " + LuasLingkaran);
+        }finally{
+            inputUser.close();
+        }
     }
 
     public static void main(String[] args) {
