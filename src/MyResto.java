@@ -1,10 +1,13 @@
 
 import java.util.Scanner;
 
+import javax.sound.sampled.SourceDataLine;
+
 public class MyResto{
     public static String[] MyCart =  new String[6];
     
     private static void printOrder(String[] myOrder){
+        System.out.println("\nPesanan Anda Adalah : ");
         for(int i=0;i<myOrder.length;i++){
             System.out.println(myOrder[i]);
         }
@@ -41,8 +44,9 @@ public class MyResto{
                 pilihanMakanan = "Es Jeruk";
                 break;
         }
-
-        MyCart[index] = pilihanMakanan;
+      
+            MyCart[index] = pilihanMakanan;
+       
     }
 
     private static void Load_Menu(){
@@ -52,12 +56,14 @@ public class MyResto{
         char pilih='a';
         int loop = 0;
         do{
-            System.out.println("\nMAKANAN");
+            System.out.println("\nMENU MAKANAN");
+            System.out.println("-------------------");
             System.out.println(MenuMakanan + "\n");
-            System.out.println("MINUMAN");
+            System.out.println("MENU  MINUMAN");
+            System.out.println("-------------------");
             System.out.println(MenuMinuman);
 
-            System.out.print("\nPilihan Anda ( tekan 'x' untuk keluar )= ");
+            System.out.print("\nPilihan Anda ( tekan 'x' untuk mencetak Order / Keluar ) = ");
             pilih = myInput.next().charAt(0);
 
             AddToCart(pilih,loop);
