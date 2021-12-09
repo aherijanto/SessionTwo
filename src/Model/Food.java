@@ -14,7 +14,7 @@ public class Food {
     }
 
     public void PrintFoodMenu(){
-        System.out.println(food_code + " "+food_name+" "+
-                 food_category + " " + food_price);
+        System.out.println(this.food_code + " "+this.food_name+" "+
+                 this.food_category + " " + this.food_price);
     }
 }

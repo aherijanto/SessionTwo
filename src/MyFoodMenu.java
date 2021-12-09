@@ -17,7 +17,7 @@ public class MyFoodMenu {
         }
 //------------------------------------------------------------------------------------------
 //------------------------------------------------------------------------------------------
-        //meminta input dari user kemudian memasukan ke model array myMenu2
+        //meminta input dari user kemudian memasukan ke model array myMenu1
         Food[] myMenu1 = new Food[3];
         int loop=0;
         System.out.println("\nInput 3(Tiga) Data Makanan Baru");
